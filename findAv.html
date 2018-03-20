@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finding Average</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="findAv_stylesheet.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="findAv_script.js"></script>
+</head>
+<body>
+    <div class="pure-g">
+        <div class="pure-u-sm-1 pure-u-lg-1-2">
+            <input id="newVal" type="number" placeholder="add value" autofocus>
+            <button onclick="addValToArr()" class="button-add pure-button">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+        <div class="pure-u-sm-1 pure-u-lg-1-2">
+                <button onclick="calcAverage()" class="button-calculate pure-button">Find Average</button>
+                <button onclick="clearArr()" class="button-clear pure-button">Start Over</button>
+        </div>
+    </div>
+    <p id="notif"></p>
+</body>
+</html>
